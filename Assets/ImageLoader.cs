@@ -5,18 +5,24 @@ using UnityEngine.Networking;
 
 public class ImageLoader : MonoBehaviour
 {
-    public RawImage rawImage; // Arrastra el RawImage aquí desde el Inspector
-    private string imageUrl = "http://localhost:3000/images/Colisi%C3%83%C2%B3n%20equipos%20MHE.png";
+    public RawImage Ruido; // Arrastra el RawImage Ruido aquí desde el Inspector
+    private string imageUrlRuido = "http://localhost:3000/images/Ruido91.png";
 
-    public int maxWidth = 5; // Ancho máximo para el RawImage
-    public int maxHeight = 5; // Alto máximo para el RawImage
+    public RawImage Riesgo; // Arrastra el RawImage Riesgo aquí desde el Inspector
+    private string imageUrlRiesgo = "http://localhost:3000/images/Colisi%C3%83%C2%B3n%20equipos%20MHE.png";
+
+    public int maxWidth = 5; // Ancho máximo para el RawImage Riesgo
+    public int maxHeight = 5; // Alto máximo para el RawImage Riesgo
+    public int maxWidthRuido = 4; // Ancho máximo para el RawImage Ruido
+    public int maxHeightRuido = 3; // Alto máximo para el RawImage Ruido
 
     void Start()
     {
-        StartCoroutine(LoadImageFromURL(imageUrl));
+        StartCoroutine(LoadImageFromURL(imageUrlRuido, Ruido, maxWidthRuido, maxHeightRuido));
+        StartCoroutine(LoadImageFromURL(imageUrlRiesgo, Riesgo, maxWidth, maxHeight));
     }
 
-    IEnumerator LoadImageFromURL(string url)
+    IEnumerator LoadImageFromURL(string url, RawImage rawImage, int maxWidth, int maxHeight)
     {
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
         yield return request.SendWebRequest();
@@ -54,7 +60,7 @@ public class ImageLoader : MonoBehaviour
             rawImage.rectTransform.sizeDelta = new Vector2(newWidth, newHeight);
 
             // Inicia el efecto de latido
-            StartCoroutine(PulseEffect());
+            StartCoroutine(PulseEffect(rawImage));
         }
         else
         {
@@ -62,7 +68,7 @@ public class ImageLoader : MonoBehaviour
         }
     }
 
-    IEnumerator PulseEffect()
+    IEnumerator PulseEffect(RawImage rawImage)
     {
         while (true)
         {
