@@ -4,22 +4,41 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class ToggleMenu : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
-    public InputActionReference toggleReference = null;
+    public GameObject menupanel;
+    public InputActionReference openMenuAction = null;
 
     private void Awake()
     {
-        toggleReference.action.started += Toggle;
+        menupanel.SetActive(false);
+        openMenuAction.action.Enable();
+        openMenuAction.action.performed += ToggleMenu;
+        InputSystem.onDeviceChange += OnDeviceChange;
     }
     private void OnDestroy()
     {
-        toggleReference.action.started -= Toggle;
+        openMenuAction.action.Disable();
+        openMenuAction.action.performed -= ToggleMenu;
+        InputSystem.onDeviceChange -= OnDeviceChange;
     }
 
-    private void Toggle(InputAction.CallbackContext context)
+    private void ToggleMenu(InputAction.CallbackContext context)
     {
-        bool isActive = !gameObject.activeSelf;
-        gameObject.SetActive(isActive);
+        menupanel.SetActive(!menupanel.activeSelf);
+    }
+    private void OnDeviceChange(InputDevice device, InputDeviceChange change)
+    {
+        switch (change)
+        {
+            case InputDeviceChange.Disconnected:
+                openMenuAction.action.Disable();
+                openMenuAction.action.performed -= ToggleMenu;
+                break;
+            case InputDeviceChange.Reconnected:
+                openMenuAction.action.Enable();
+                openMenuAction.action.performed += ToggleMenu;
+                break;
+        }
     }
 }
