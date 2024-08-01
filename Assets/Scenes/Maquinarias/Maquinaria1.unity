@@ -3054,7 +3054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelAtrapamiento: {fileID: 2078658000}
-  botonAtrapamiento: {fileID: 0}
+  botonAtrapamiento: {fileID: 1200000065}
 --- !u!1 &1948974015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,7 +3344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelAtrapamiento: {fileID: 2078658000}
-  botonAtrapamiento: {fileID: 0}
+  botonAtrapamiento: {fileID: 1200000065}
 --- !u!1 &2139992157
 GameObject:
   m_ObjectHideFlags: 0
