@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 313932927}
   - component: {fileID: 313932926}
   - component: {fileID: 313932929}
+  - component: {fileID: 313932930}
   m_Layer: 5
   m_Name: button
   m_TagString: Untagged
@@ -524,6 +525,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1088125798}
   button: {fileID: 313932926}
+--- !u!114 &313932930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313932924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ac5945b8b053148834ffc3f2c4f6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 313932926}
+  move: {fileID: 1865468493}
+  Caida: {fileID: 77150051}
+  botonAtrapamiento: {fileID: 1200000065}
 --- !u!1 &591318685
 GameObject:
   m_ObjectHideFlags: 0
