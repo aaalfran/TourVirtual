@@ -8,7 +8,8 @@ public class VideoPlayerController : MonoBehaviour
     void Start()
     {
         // Asignar la URL del video
-        videoPlayer.url = "http://localhost:3000/videos/teflon.mp4";
+        string videoName = videoPlayer.name;
+        videoPlayer.url = "http://localhost:3000/videos/"+videoName+".mp4";
         
         // Configurar el VideoPlayer para reproducir el video
         videoPlayer.Prepare();
