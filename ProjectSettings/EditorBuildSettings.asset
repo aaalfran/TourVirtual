@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Maquinarias/Empaque.unity
     guid: e0f9e1247d58d884d8d5d0043d2bf93a
   - enabled: 1
-    path: Assets/Scenes/Maquinarias/Maquinaria1.unity
+    path: Assets/Scenes/Maquinarias/Linea6_Galleteria.unity
     guid: 6c841b84bc456bb438a44b2affe124ac
   - enabled: 1
-    path: Assets/Scenes/Maquinarias/Maquinaria2.unity
+    path: Assets/Scenes/Maquinarias/Rotary.unity
     guid: 6eb40752e6764f04ab19b128fb3c8d18
   - enabled: 1
     path: Assets/Scenes/Maquinarias/Empaque.unity
@@ -23,9 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maquinarias/Montacargas.unity
     guid: 68b200118e8e186438e5f3685e5544cc
-  - enabled: 1
-    path: Assets/Scenes/Maquinarias/Maquinaria3.unity
+  - enabled: 0
+    path: Assets/Scenes/Maquinarias/Linea 2 Waffer.unity
     guid: 0c4dcfa17a4bd974aa3b6e2154af15f3
+  - enabled: 1
+    path: Assets/Scenes/Maquinarias/Linea2_Waffer.unity
+    guid: 8b810125e68d6974b8b1d0fdf134da7c
+  - enabled: 1
+    path: Assets/Scenes/Maquinarias/Empaque Waffer.unity
+    guid: 9895bc527cdb4764fa4c8cb3e24ae6b5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
