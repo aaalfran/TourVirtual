@@ -31,7 +31,7 @@ public class LoadImageFromAPI : MonoBehaviour
         {
             Texture2D texture = DownloadHandlerTexture.GetContent(request);
             rawImage.texture = texture;
-            Debug.Log("Sexo obtenido al descargar"+ url);
+            
         }
         else
         {
