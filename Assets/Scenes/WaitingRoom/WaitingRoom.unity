@@ -6631,6 +6631,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -281.95
       objectReference: {fileID: 0}
+    - target: {fileID: 5288901647623234127, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_FallbackIfEyeTrackingUnavailable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5522443343171493203, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647

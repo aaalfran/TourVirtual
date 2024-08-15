@@ -6,6 +6,7 @@ public class TourManager : MonoBehaviour
     public GameObject menuBienvenida;
     public Button Empezar_Tour;
     public Button[] tourSteps;
+    public GameObject[] Paneles;
 
     private int currentStep = 0;
 
@@ -19,6 +20,11 @@ public class TourManager : MonoBehaviour
         {
             button.gameObject.SetActive(false); // Desactivar todos los botones al inicio
             button.onClick.AddListener(NextStep);
+        }
+
+        foreach(GameObject panel in Paneles)
+        {
+            panel.gameObject.SetActive(false);
         }
     }
 

@@ -16,6 +16,9 @@ public class showPanel : MonoBehaviour
 
     void ActivatePanelMethod()
     {
+
+        //Esconde el boton
+        button.gameObject.SetActive(false);
         // Activa el panel
         panel.SetActive(true);
     }
