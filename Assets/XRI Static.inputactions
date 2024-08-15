@@ -1,5 +1,5 @@
 {
-    "name": "XRI Default Input Actions",
+    "name": "XRI Static",
     "maps": [
         {
             "name": "XRI Head",
@@ -1107,7 +1107,7 @@
                 {
                     "name": "",
                     "id": "8e383b1a-270f-4c20-819b-89a59cffb498",
-                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "path": "",
                     "interactions": "",
                     "processors": "StickDeadzone",
                     "groups": "",
