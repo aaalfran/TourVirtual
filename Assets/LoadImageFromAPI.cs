@@ -5,7 +5,7 @@ using System.Collections;
 
 public class LoadImageFromAPI : MonoBehaviour
 {
-    public string apiBaseUrl = "localhost:3000/images/"; // URL base de la API
+    public string apiBaseUrl = "https://backendapi-84rm.onrender.com/images/"; // URL base de la API
     public RawImage rawImage;
 
     void Start()

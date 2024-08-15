@@ -9,9 +9,9 @@ public class AtrapamientoImageController : MonoBehaviour
     public Button botonAtrapamiento; // Referencia al botón que controla la RawImage
     private bool isAtrapamientoImageVisible = false; // Estado de visibilidad de la RawImage
     private bool isAtrapamientoImageLoading = false; // Estado de carga de la imagen
-    private string atrapamientoImageUrl = "http://localhost:3000/images/Atrapamiento.png"; // URL de la imagen
+    private string atrapamientoImageUrl = "https://backendapi-84rm.onrender.com/images/Atrapamiento.png"; // URL de la imagen
 
-    void Start()
+   public void  Start()
     {
         // Asegurarse de que el botón tiene el listener asignado
         if (botonAtrapamiento != null)

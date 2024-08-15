@@ -9,7 +9,7 @@ public class VideoPlayerController : MonoBehaviour
     {
         // Asignar la URL del video
         string videoName = videoPlayer.name;
-        videoPlayer.url = "http://localhost:3000/videos/"+videoName+".mp4";
+        videoPlayer.url = "https://backendapi-84rm.onrender.com/videos/" + videoName+".mp4";
         
         // Configurar el VideoPlayer para reproducir el video
         videoPlayer.Prepare();
