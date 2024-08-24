@@ -5694,6 +5694,14 @@ MonoBehaviour:
   - {fileID: 119799221}
   - {fileID: 93943528}
   - {fileID: 535796446}
+  Paneles:
+  - {fileID: 1740484442}
+  - {fileID: 128790859}
+  - {fileID: 370724332}
+  - {fileID: 2069485771}
+  - {fileID: 119799216}
+  - {fileID: 538869258}
+  - {fileID: 1586330757}
 --- !u!1 &1752548225
 GameObject:
   m_ObjectHideFlags: 0
