@@ -1008,6 +1008,17 @@
                     "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04218ac5-f4ea-451e-90ab-e3897edbe8b8",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
