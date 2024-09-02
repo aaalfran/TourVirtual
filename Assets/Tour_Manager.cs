@@ -7,6 +7,7 @@ public class TourManager : MonoBehaviour
     public Button Empezar_Tour;
     public Button[] tourSteps;
     public GameObject[] Paneles;
+    public GameObject menuSalida;
 
     private int currentStep = 0;
 
@@ -14,6 +15,10 @@ public class TourManager : MonoBehaviour
     {
         // Asignar eventos a los botones
         Empezar_Tour.onClick.AddListener(StartTour);
+
+        //Desactivar el panel de salida
+
+        menuSalida.SetActive(false);
 
         // Asignar el evento para los botones del tour
         foreach (Button button in tourSteps)
@@ -26,6 +31,8 @@ public class TourManager : MonoBehaviour
         {
             panel.gameObject.SetActive(false);
         }
+
+
     }
 
     void StartTour()
@@ -53,6 +60,16 @@ public class TourManager : MonoBehaviour
         if (currentStep < tourSteps.Length)
         {
             tourSteps[currentStep].gameObject.SetActive(true);
+        }
+
+        FinishTour();
+    }
+
+    void FinishTour()
+    {
+        if (currentStep == tourSteps.Length)
+        {
+            menuSalida.SetActive(true);
         }
     }
 }
